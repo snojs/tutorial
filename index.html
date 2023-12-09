@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowy - Docs</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="sidebar-contain">
+        <div class="sidebar">
+            <a href="#" class="sidebar-head">Snowy - Docs</a>
+            <a href="#" class="sidebar-sub">snojs v1.2</a>
+            <a href="./index.html" class="sidebar-item highlight">Introduction</a>
+            <a href="#" class="sidebar-item disable">v1.1</a>
+            <a href="./data.html" class="sidebar-item">Data</a>
+            <a href="./ifelse.html" class="sidebar-item">If/Else</a>
+            <a href="#" class="sidebar-item">Click events</a>
+            <a href="#" class="sidebar-item">Value Binding</a>
+            <a href="#" class="sidebar-item">Showing Variables</a>
+            <span class="sidebar-hr"></span>
+            <a href="#" class="sidebar-item">Why sno?</a>
+            <a href="#" class="sidebar-item disable sidebar-footer">[Github] [Guyot]</a>
+        </div>
+    </div>
+    <div class="main">
+        <h1># SnoJS - Docs</h1>
+        <span class="hr"></span>
+        <p>
+            Snojs is a fast and lightweight javascript framework to add reactivity in a <b>**snap**</b>
+        </p>
+        <p>
+            Sno is on release version 1.2
+        </p>
+        <p class="code">
+            <em><span class="hr">Changelog</span></em>
+            - One thing<br/>
+            - Another thing<br/>
+            - A final thing
+        </p>
+        <span class="hr"></span>
+        <em>Sooooo? How long is a simple Counter?</em><br/>
+        <p class="code">
+            <!-- >&#62;  &#60; < -->
+            &#60;body data='{"count":0}'&#62;<br/>
+            &nbsp;&nbsp;&#60;button click='count++;'&#62;Increment&#60;/button&#62;<br/>
+            &nbsp;&nbsp;&#60;p lint&#62;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;{{count}}<br/>
+            &nbsp;&nbsp;&#60;/p&#62;<br/>
+            &#60;/body&#62;
+        </p>
+        <span class="hr"></span>
+        <h2>## Never leave your html</h2>
+        <span class="hr"></span>
+        SnoJs is designed to have you never write any JS if you dont to.<br/>
+        Declare all your variables in the data tag and do anything you want after that.<br/><br/>
+        <h2>## Wdym by small?</h2>
+        <span class="hr"></span>
+        I mean <b>180 lines</b>. A build size of around 3kb!!<br/>
+        <b>1 single</b> script tag.
+        <p class="code">
+            &#60;script src="https://snojs.github.io/build/sno-min.js"&#62;&#60;/script&#62;
+        </p>
+        <br/>
+        <a href="./data.html">[Next]</a><br/>
+        <p class="last-update">This page was last update on Dec 9. 2023 by, Weston</p>
+    </div>
+    <script src="../snojs/sno-min.js"></script>
+</body>
+</html>
