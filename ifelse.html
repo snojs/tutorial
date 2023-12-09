@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snowy - Starting</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="sidebar-contain">
+        <div class="sidebar">
+            <a href="#" class="sidebar-head">Snowy - Docs</a>
+            <a href="#" class="sidebar-sub">snojs v1.2</a>
+            <a href="./index.html" class="sidebar-item">Introduction</a>
+            <a href="#" class="sidebar-item disable">v1.1</a>
+            <a href="./data.html" class="sidebar-item">Data</a>
+            <a href="#" class="sidebar-item highlight">If/Else</a>
+            <a href="#" class="sidebar-item">Click events</a>
+            <a href="#" class="sidebar-item">Value Binding</a>
+            <a href="#" class="sidebar-item">Showing Variables</a>
+            <span class="sidebar-hr"></span>
+            <a href="#" class="sidebar-item">Why sno?</a>
+            <a href="#" class="sidebar-item disable sidebar-footer">[Github] [Guyot]</a>
+        </div>
+    </div>
+    <div class="main">
+        <h1># If / Else Tags</h1>
+        <span class="hr"></span>
+        The <b>If</b> and <b>Else</b> tags allow you to hide or show any element based on the value of a boolean variable.<br/>
+        Sounds easy right? <em>but you've gotta know a couple things first.</em><br/>
+        <ol>
+            <li>Gotta have the <b>script</b> tag</li>
+            <li>Initiate the <b>data</b> attribute</li>
+            <li>And you also have to have a <b>boolean variable</b></li>
+        </ol>
+        Example code fr.
+        <p class="code">
+            &#60;body data='{"show:false"}'&#62;<br/>
+                &nbsp;&nbsp;&#60;button click="show = toggle(show)"&#62;&#60;/button&#62;<br/>
+                &nbsp;&nbsp;&#60;p if="show"&#62;Show = true!&#60;/p&#62;<br/>
+            &#60;/body&#62;
+        </p><span class="hr"></span>
+        <h2>## The breakdown</h2>
+        <span class="hr"></span>
+        By this point you've got the data tag, so all were doing is declaring the variable show with a false value.<br/>
+        Then you can use the click attribute to call an action on a click. <br/>(<br/>
+        &nbsp;&nbsp;The click event is setting the show variable to the opposite of show.<br/>
+        &nbsp;&nbsp;It uses the built in toggle() function. The toggle function takes the prop of the variable and spits out the opposite.<br/>
+        &nbsp;&nbsp;The fun bit is up ahead. The actual if attribute is also taking a javascript evaluation.<br/>
+        &nbsp;&nbsp;This means you could run something like <b>if="count==2"</b>, because it is just an if statement.
+        <br/>)<br/><br/>
+        Yooooo, you now know <b>if statements</b>!  
+        <br/>
+        <br/>
+        <a href="./data.html">[Prev]</a> <a href="">[Next]</a>
+    </div>
+</body>
