@@ -3,68 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snowy - Docs</title>
+    <title>Sno - Docs</title>
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/149719209?s=200&v=4"/>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <div class="sidebar-contain">
-        <div class="sidebar">
-            <a href="#" class="sidebar-head">Snowy - Docs</a>
-            <a href="#" class="sidebar-sub">snojs v1.2</a>
-            <a href="./index.html" class="sidebar-item highlight">Introduction</a>
-            <a href="#" class="sidebar-item disable">v1.1</a>
-            <a href="./data.html" class="sidebar-item">Data</a>
-            <a href="./ifelse.html" class="sidebar-item">If/Else</a>
-            <a href="#" class="sidebar-item">Click events</a>
-            <a href="#" class="sidebar-item">Value Binding</a>
-            <a href="#" class="sidebar-item">Showing Variables</a>
-            <span class="sidebar-hr"></span>
-            <a href="#" class="sidebar-item">Why sno?</a>
-            <a href="#" class="sidebar-item disable sidebar-footer">[Github] [Guyot]</a>
-        </div>
-    </div>
+<body data="{count:0}">
+    <div incl="./sidebar.html"></div>
     <div class="main">
-        <h1># SnoJS - Docs</h1>
+        <br/><br/><h1>Getting Started</h1>
         <span class="hr"></span>
         <p>
-            Snojs is a fast and lightweight javascript framework to add reactivity in a <b>**snap**</b>
+            Building the web <b>{ your way }</b>
         </p>
+        <span class="hr" style="opacity: 0;"></span>
         <p>
-            Sno is on release version 1.2
-        </p>
-        <p class="code">
-            <em><span class="hr">Changelog</span></em>
-            - One thing<br/>
-            - Another thing<br/>
-            - A final thing
+            Snocrystal <em>(v4)</em>
         </p>
         <span class="hr"></span>
-        <em>Sooooo? How long is a simple Counter?</em><br/>
+        <em>Declarative UIs and you <b>never</b> touch your javascript.</em><br/>
         <p class="code">
             <!-- >&#62;  &#60; < -->
-            &#60;body data='{"count":0}'&#62;<br/>
-            &nbsp;&nbsp;&#60;button click='count++;'&#62;Increment&#60;/button&#62;<br/>
-            &nbsp;&nbsp;&#60;p lint&#62;<br/>
+            &#60;body data='{count:0}'&#62;<br/>
+            &nbsp;&nbsp;&#60;button onclick='$("count++")'&#62;Increment&#60;/button&#62;<br/>
+            &nbsp;&nbsp;&#60;p react&#62;<br/>
             &nbsp;&nbsp;&nbsp;&nbsp;{{count}}<br/>
             &nbsp;&nbsp;&#60;/p&#62;<br/>
             &#60;/body&#62;
         </p>
+        <p class="code">
+            <button class="betterButton" onclick="$('count++')">+</button> <span react>{{count}}</span>
+        </p>
+        <h2>Never leave your HTML</h2>
         <span class="hr"></span>
-        <h2>## Never leave your html</h2>
+        Sno is designed with tags that place the power of JS in HTML.<br/>
+        Reactive state is as simple as <em>count: 0</em>.<br/><br/>
+        <h2>How small?</h2>
         <span class="hr"></span>
-        SnoJs is designed to have you never write any JS if you dont to.<br/>
-        Declare all your variables in the data tag and do anything you want after that.<br/><br/>
-        <h2>## Wdym by small?</h2>
-        <span class="hr"></span>
-        I mean <b>180 lines</b>. A build size of around 3kb!!<br/>
+        I mean <b>&#60; 300</b> lines of code. A build size of around 4kb!!<br/>
         <b>1 single</b> script tag.
         <p class="code">
-            &#60;script src="https://snojs.github.io/build/sno-min.js"&#62;&#60;/script&#62;
+            &#60;script src="https://snojs.github.io/sno/crystal.js"&#62;&#60;/script&#62;
         </p>
         <br/>
-        <a href="./data.html">[Next]</a><br/>
-        <p class="last-update">This page was last update on Dec 9. 2023 by, Weston</p>
+        <a href="./data.html">[Next]</a><br/><br/>
+        <p class="last-update">This page was last update on Dec 5. 2024 by, Weston</p>
     </div>
-    <script src="../snojs/sno-min.js"></script>
+    <script src='https://snojs.github.io/sno/crystal.js'></script>
 </body>
 </html>

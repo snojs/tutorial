@@ -49,12 +49,17 @@ li{
     margin-left:10px;
 }
 .highlight{
-    font-weight:900;
+    transition: 0.3s;
+    text-align: center;
+}
+.highlight:hover{
+    transform: scale(1.1);
 }
 .disable{
     user-select:none;
     cursor:not-allowed;
     font-style:italic;
+    color: rgb(107, 105, 105);
 }
 .last-update{
     user-select:none;
@@ -81,4 +86,13 @@ li{
     margin:10px;
     border-radius:5px;
     padding:10px;
+}
+.betterButton{
+    background-color: rgba(0,0,0,0);
+    border: 1px solid rgb(152, 151, 151);
+    padding: 4px;
+    border-radius: 5px;
+}
+.betterButton:hover{
+    background-color: rgba(98, 97, 97, 0.637);
 }

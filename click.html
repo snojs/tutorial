@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sno - Clicks</title>
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/149719209?s=200&v=4"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body data="{text:'Hello!'}">
+    <div incl="sidebar.html"></div>
+    <div class="main">
+        <br/><br/><h1>Clicks</h1>
+        <span class="hr"></span>
+        Clicks in Sno are very easy. They rest on the backbone of the onclick attribute already provided.<br/>
+        Sno only provides a simple way to modify variables right inside the onclick tag.
+        <p class="code">
+            &#60;body data="{text:'Hello!'}"&#62;<br/>
+                &nbsp;&nbsp;&#60;button onclick="$('text = `Goodbye!`')"&#62;Leave&#60;/button&#62;<br/>
+                &nbsp;&nbsp;&#60;p react&#62;{{text}}&#60;/p&#62;<br/>
+            &#60;/body&#62;
+        </p>
+        <p class="code">
+            <button class="betterButton" onclick="$('text=`Goodbye!`')">Leave</button>
+            <span react>{{text}}</span>
+        </p><br/>
+        <h2>The Breakdown</h2>
+        <span class="hr"></span>
+        Click statements were originally a seperate attribute, but this failed on older devices.<br/>
+        The new function method provides a simple way to interact to variables.
+        <br/><br/>
+        Congrats, you now know <b>click statements</b>!  
+        <br/>
+        <br/>
+        <a href="./data.html">[Prev]</a> <a href="">[Next]</a>
+        <script src='https://snojs.github.io/sno/crystal.js'></script>
+    </div>
+</body>
